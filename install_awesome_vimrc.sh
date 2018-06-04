@@ -16,3 +16,9 @@ catch
 endtry' > ~/.vimrc
 
 echo "Installed the Ultimate Vim configuration successfully! Enjoy :-)"
+
+echo "cloning third party plugins"
+cd my_plugins
+git submodule add -f https://github.com/sheerun/vim-polyglot.git
+cd ../
+echo "done. check out my_plugins/"
